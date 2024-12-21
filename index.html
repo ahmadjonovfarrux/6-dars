@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sass</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container container">
+        <img
+          class="header__logo"
+          src="./images/Logo.png"
+          alt="logo of the car rental"
+        />
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Categories</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">About Us </a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">Help center </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__box">
+          <p class="tell">+1 855 420 0000</p>
+          <div class="box__sun">
+            <img
+              class="box__sun__img"
+              src="./images/Sun.svg"
+              alt="logo of the sun"
+            />
+          </div>
+          <a class="box__login btn" href="#"
+            >Login
+            <img
+              class="box__login__img"
+              src="./images/Login.svg"
+              alt="logo of the login"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- The end of the header -->
+
+    <!-- Main  -->
+    <main class="main">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__container container">
+          <h1 class="hero__title">Compact cars</h1>
+          <p class="hero__description">
+            Rent cars as you are comfortable and where you are comfortable.
+          </p>
+          <form>
+            <input
+              class="hero__input"
+              type="text"
+              placeholder="Find the car of your dreams"
+            />
+          </form>
+        </div>
+      </section>
+      <!-- Collection -->
+      <section class="collection">
+        <div class="collecton__container container">
+          <h2 class="collection__title">Choose the car of your dreams</h2>
+          <p class="collection__description">
+            We provide our customers with the most incredible driving emotions.
+            That is why there are only world-class cars in our fleet
+          </p>
+
+          <div class="collection__btn__box">
+            <a class="collection__btn btn" href="#">Compact</a>
+            <a class="collection__btn dark__btn" href="#">Sports cars</a>
+            <a class="collection__btn dark__btn" href="#">Vans </a>
+          </div>
+          <div class="collection__cars">
+            <!-- First -->
+            <div class="cars__card">
+              <h4 class="card__title">Ford Fiesta</h4>
+              <p class="card__description">Economy Car</p>
+              <img
+                class="car__img"
+                src="./images/ford.png"
+                alt="image of car"
+              />
+
+              <div class="card__info__box">
+                <div class="card__info">
+                  <div class="card__seat">
+                    <img
+                      class="card__img"
+                      src="./images/User.svg"
+                      alt="ico of the seat"
+                    />
+                    <p>5 Seats</p>
+                  </div>
+                  <div class="card__years">
+                    <img
+                      class="card__img"
+                      src="./images/File-user.svg"
+                      alt="ico of the year"
+                    />
+                    <p>21+ Years</p>
+                  </div>
+                </div>
+
+                <div class="_card__info">
+                  <div class="card__gear">
+                    <img
+                      class="card__img"
+                      src="./images/gear 1.svg"
+                      alt="image of gear"
+                    />
+                    <p>Automotic</p>
+                  </div>
+                  <div class="card__fuel">
+                    <img
+                      class="card__img"
+                      src="./images/petrol 1.svg"
+                      alt="image of fuel"
+                    />
+                    <p>1-litr/2.5km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- second -->
+            <div class="cars__card">
+              <h4 class="card__title">Nissan Versa</h4>
+              <p class="card__description">Compact Car</p>
+              <img
+                class="car__img"
+                src="./images/versa.png"
+                alt="image of car"
+              />
+              <div class="card__info__box">
+                <div class="card__info">
+                  <div class="card__seat">
+                    <img
+                      class="card__img"
+                      src="./images/User.svg"
+                      alt="ico of the seat"
+                    />
+                    <p>5 Seats</p>
+                  </div>
+                  <div class="card__years">
+                    <img
+                      class="card__img"
+                      src="./images/File-user.svg"
+                      alt="ico of the year"
+                    />
+                    <p>21+ Years</p>
+                  </div>
+                </div>
+
+                <div class="_card__info">
+                  <div class="card__gear">
+                    <img
+                      class="card__img"
+                      src="./images/gear 1.svg"
+                      alt="image of gear"
+                    />
+                    <p>Automotic</p>
+                  </div>
+                  <div class="card__fuel">
+                    <img
+                      class="card__img"
+                      src="./images/petrol 1.svg"
+                      alt="image of fuel"
+                    />
+                    <p>1-litr/2.5km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Third -->
+            <div class="cars__card">
+              <h4 class="card__title">Toyota Corolla</h4>
+              <p class="card__description">Mid-size Car</p>
+              <img
+                class="car__img"
+                src="./images/toyota.png"
+                alt="image of car"
+              />
+
+              <div class="card__info__box">
+                <div class="card__info">
+                  <div class="card__seat">
+                    <img
+                      class="card__img"
+                      src="./images/User.svg"
+                      alt="ico of the seat"
+                    />
+                    <p>5 Seats</p>
+                  </div>
+                  <div class="card__years">
+                    <img
+                      class="card__img"
+                      src="./images/File-user.svg"
+                      alt="ico of the year"
+                    />
+                    <p>21+ Years</p>
+                  </div>
+                </div>
+
+                <div class="_card__info">
+                  <div class="card__gear">
+                    <img
+                      class="card__img"
+                      src="./images/gear 1.svg"
+                      alt="image of gear"
+                    />
+                    <p>Automotic</p>
+                  </div>
+                  <div class="card__fuel">
+                    <img
+                      class="card__img"
+                      src="./images/petrol 1.svg"
+                      alt="image of fuel"
+                    />
+                    <p>1-litr/2.5km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- four -->
+            <div class="cars__card">
+              <h4 class="card__title">Nissan Rogue</h4>
+              <p class="card__description">Mid-size SUV</p>
+              <img
+                class="car__img"
+                src="./images/nissan.png"
+                alt="image of car"
+              />
+
+              <div class="card__info__box">
+                <div class="card__info">
+                  <div class="card__seat">
+                    <img
+                      class="card__img"
+                      src="./images/User.svg"
+                      alt="ico of the seat"
+                    />
+                    <p>5 Seats</p>
+                  </div>
+                  <div class="card__years">
+                    <img
+                      class="card__img"
+                      src="./images/File-user.svg"
+                      alt="ico of the year"
+                    />
+                    <p>21+ Years</p>
+                  </div>
+                </div>
+
+                <div class="_card__info">
+                  <div class="card__gear">
+                    <img
+                      class="card__img"
+                      src="./images/gear 1.svg"
+                      alt="image of gear"
+                    />
+                    <p>Automotic</p>
+                  </div>
+                  <div class="card__fuel">
+                    <img
+                      class="card__img"
+                      src="./images/petrol 1.svg"
+                      alt="image of fuel"
+                    />
+                    <p>1-litr/2.5km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- five -->
+            <div class="cars__card">
+              <h4 class="card__title">Chevy Traverse</h4>
+              <p class="card__description">Full-size SUV</p>
+              <img
+                class="car__img"
+                src="./images/travers.png"
+                alt="image of car"
+              />
+
+              <div class="card__info__box">
+                <div class="card__info">
+                  <div class="card__seat">
+                    <img
+                      class="card__img"
+                      src="./images/User.svg"
+                      alt="ico of the seat"
+                    />
+                    <p>5 Seats</p>
+                  </div>
+                  <div class="card__years">
+                    <img
+                      class="card__img"
+                      src="./images/File-user.svg"
+                      alt="ico of the year"
+                    />
+                    <p>21+ Years</p>
+                  </div>
+                </div>
+
+                <div class="_card__info">
+                  <div class="card__gear">
+                    <img
+                      class="card__img"
+                      src="./images/gear 1.svg"
+                      alt="image of gear"
+                    />
+                    <p>Automotic</p>
+                  </div>
+                  <div class="card__fuel">
+                    <img
+                      class="card__img"
+                      src="./images/petrol 1.svg"
+                      alt="image of fuel"
+                    />
+                    <p>1-litr/2.5km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Six -->
+            <div class="cars__card">
+              <h4 class="card__title">Nissan Altima</h4>
+              <p class="card__description">Full-size Car</p>
+              <img
+                class="car__img"
+                src="./images/altima.png"
+                alt="image of car"
+              />
+              <div class="card__info__box">
+                <div class="card__info">
+                  <div class="card__seat">
+                    <img
+                      class="card__img"
+                      src="./images/User.svg"
+                      alt="ico of the seat"
+                    />
+                    <p>5 Seats</p>
+                  </div>
+                  <div class="card__years">
+                    <img
+                      class="card__img"
+                      src="./images/File-user.svg"
+                      alt="ico of the year"
+                    />
+                    <p>21+ Years</p>
+                  </div>
+                </div>
+
+                <div class="_card__info">
+                  <div class="card__gear">
+                    <img
+                      class="card__img"
+                      src="./images/gear 1.svg"
+                      alt="image of gear"
+                    />
+                    <p>Automotic</p>
+                  </div>
+                  <div class="card__fuel">
+                    <img
+                      class="card__img"
+                      src="./images/petrol 1.svg"
+                      alt="image of fuel"
+                    />
+                    <p>1-litr/2.5km</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="_collection__btn btn" href="">View all cars</a>
+        </div>
+      </section>
+      <!-- Comments -->
+       <section class="comments">
+        <div class="comments__container container">
+          
+        </div>
+       </section>
+    </main>
+    <!-- The end of the main -->
+
+    <!-- Footer -->
+    <footer class="footer"></footer>
+    <!--The end of the footer  -->
+  </body>
+</html>

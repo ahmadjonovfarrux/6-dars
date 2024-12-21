@@ -1,0 +1,38 @@
+.header {
+  padding-top: 2.7rem;
+  padding-bottom: 2.7rem;
+  border-bottom: 1px solid $dark-border-color;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.sitenav__link {
+  color: $light-background-color;
+}
+
+.header__box {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.tell {
+}
+.box__sun {
+  width: 5.8rem;
+  height: 5.8rem;
+  background-color: $dark-border-color;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
