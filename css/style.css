@@ -2,7 +2,21 @@ html {
   font-size: 62.5%;
 }
 
+:root {
+  --primary-color: #00b894;
+  --secondary-color: #ffffff;
+  --background-color: #121212;
+  --card-background-color: #1e1e1e;
+  --text-color: #dfe6e9;
+  --muted-text-color: #636e72;
+  --border-color: #2d2d2d;
+  --hover-color: #019a76;
+  --link-color: #74b9ff;
+  --footer-background: #181818;
+}
+
 body {
+  transition: 3 ease;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
@@ -12,6 +26,21 @@ body {
   scroll-behavior: smooth;
 }
 
+body.light-mode {
+  --primary-color: #00b894;
+  --secondary-color: #000000;
+  --background-color: #ffffff;
+  --card-background-color: #f9f9f9;
+  --text-color: #2d3436;
+  --muted-text-color: #636e72;
+  --border-color: #e0e0e0;
+  --hover-color: #019a76;
+  --link-color: #0984e3;
+  --footer-background: #f1f1f1;
+}
+
+*::after,
+*::before,
 * {
   padding: 0;
   margin: 0;
@@ -41,6 +70,16 @@ img {
   background-color: #00b894;
   padding: 1.8rem 3rem;
   border-radius: 3rem;
+}
+
+.btn__circle {
+  width: 7rem;
+  height: 7rem;
+  background-color: #00b894;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dark__btn {
@@ -83,8 +122,8 @@ img {
   src: url("../fonts/montserrat-v29-latin-600.woff2") format("woff2");
 }
 .header {
-  padding-top: 2.7rem;
-  padding-bottom: 2.7rem;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
   border-bottom: 1px solid #2d2d2d;
 }
 
@@ -97,11 +136,58 @@ img {
 .sitenav__list {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
 }
 
 .sitenav__link {
   color: #ffffff;
+  padding: 1.8rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 10rem;
+}
+.sitenav__link:hover {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.sitenav__link::after {
+  display: inline-block;
+  content: "";
+  background-image: url("../../images/Caret down.png");
+  background-size: contain;
+  width: 2rem;
+  height: 2rem;
+}
+
+.hidden__icon::after {
+  display: none;
+}
+
+.sitenav__item {
+  position: relative;
+}
+
+.sitenav__item:hover .hidden__nav {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sitenav__item:hover a::after {
+  transform: rotate(180deg);
+}
+
+.hidden__nav {
+  transition: 1s ease;
+  opacity: 0;
+  visibility: hidden;
+  padding: 1rem;
+  position: absolute;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1490196078);
+  border-radius: 10rem;
+}
+.hidden__nav a::after {
+  display: none;
 }
 
 .header__box {
@@ -110,11 +196,16 @@ img {
   gap: 2.4rem;
 }
 
+.header__phone__number {
+  color: #ffffff;
+}
+
 .box__sun {
   width: 5.8rem;
   height: 5.8rem;
   background-color: #2d2d2d;
   border-radius: 50%;
+  border: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -157,11 +248,8 @@ img {
   padding: 2.2rem 31.8rem 2.2rem 3rem;
   border-radius: 10rem;
   border: none;
-  position: absolute;
-  right: 30rem;
-  left: 30rem;
-  bottom: 5rem;
   outline: none;
+  margin-top: 32rem;
 }
 
 .hero__input::-moz-placeholder {
@@ -172,6 +260,14 @@ img {
 .hero__input::placeholder {
   font-family: "Montserrat";
   font-weight: 500;
+}
+
+.hero__btn {
+  width: 5rem;
+  height: 5rem;
+  top: 47.5rem;
+  right: 29.5rem;
+  position: absolute;
 }
 
 .collection {
@@ -412,6 +508,10 @@ img {
   margin-bottom: 1rem;
 }
 
+.grid__box__title:first-child {
+  width: 21.1rem;
+}
+
 .grid__box__description {
   width: 35.4rem;
   font-weight: 400;
@@ -587,14 +687,4 @@ img {
   justify-content: center;
   margin-top: 3rem;
   background-color: #ffffff;
-}
-
-.btn__up {
-  width: 7rem;
-  height: 7rem;
-  background-color: #00b894;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

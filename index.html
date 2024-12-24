@@ -15,28 +15,51 @@
           src="./images/Logo.png"
           alt="logo of the car rental"
         />
+
         <nav class="sitenav">
           <ul class="sitenav__list">
             <li class="sitenav__item">
-              <a class="sitenav__link" href="#">Categories</a>
+              <a class="sitenav__link hidden__icon" href="#">Categories</a>
             </li>
             <li class="sitenav__item">
               <a class="sitenav__link" href="#">About Us </a>
+              <ul class="hidden__nav">
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="">News</a>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="">Careers</a>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="">Locations</a>
+                </li>
+              </ul>
             </li>
+
             <li class="sitenav__item">
               <a class="sitenav__link" href="#">Help center </a>
+              <ul class="hidden__nav">
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="">FAQ</a>
+                </li>
+                <li class="sitenav__item">
+                  <a class="sitenav__link" href="">Contact us</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
         <div class="header__box">
-          <p class="tell">+1 855 420 0000</p>
-          <div class="box__sun">
+          <a class="header__phone__number" href="tel:+1 855 420 0000"
+            >+1 855 420 0000</a
+          >
+          <button class="box__sun" id="theme-toggler">
             <img
               class="box__sun__img"
               src="./images/Sun.svg"
               alt="logo of the sun"
             />
-          </div>
+          </button>
           <a class="box__login btn" href="#"
             >Login
             <img
@@ -65,6 +88,9 @@
               type="text"
               placeholder="Find the car of your dreams"
             />
+            <a class="btn__circle hero__btn" href="">
+              <img class="hero__" src="./images/Search.svg" alt="" />
+            </a>
           </form>
         </div>
       </section>
@@ -703,7 +729,7 @@
               </div>
             </div>
           </div>
-          <a class="btn__up" href="#hero">
+          <a class="btn__circle btn__up" href="#hero">
             <img
               class="footer__up__img"
               src="./images/Arrow up.png"
@@ -714,5 +740,7 @@
       </div>
     </footer>
     <!--The end of the footer  -->
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
