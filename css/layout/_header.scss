@@ -1,7 +1,7 @@
 .header {
   padding-top: 1.8rem;
   padding-bottom: 1.8rem;
-  border-bottom: 1px solid $dark-border-color;
+  border-bottom: 1px solid var(--border-color);
 }
 .header__container {
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 .sitenav__link {
-  color: $light-background-color;
+  color: var(--secondary-color);
   padding: 1.8rem 1.6rem;
   display: flex;
   align-items: center;
@@ -23,8 +23,8 @@
   border-radius: 10rem;
 
   &:hover {
-    background-color: $dark-background-color;
-    color: $light-background-color;
+    background-color: var(--background-color);
+    color: var(--secondary-color);
   }
 }
 
@@ -77,13 +77,13 @@
 }
 
 .header__phone__number {
-  color: $light-background-color;
+  color: var(--secondary-color);
 }
 
 .box__sun {
   width: 5.8rem;
   height: 5.8rem;
-  background-color: $dark-border-color;
+  background-color: var(--border-color);
   border-radius: 50%;
   border: none;
   display: flex;
